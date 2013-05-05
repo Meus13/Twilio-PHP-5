@@ -229,7 +229,7 @@ class Twilio
 				return $uri . '?' . http_build_query($parameters, '', '&');
 			}
 		}
-var_dump($uri);
+
 		return $uri;
 	}
 
