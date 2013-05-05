@@ -12,5 +12,16 @@ use Twilio\Api\Resource\Listing;
  */
 class IncomingPhoneNumber extends Listing
 {
+	/**
+	 * Create method overwrite
+	 *
+	 * @param array $parameters Collection of parameters to pass to api
+         * 
+     	 * @return Instance
+	 */
+	public function create($parameters = array())
+	{
+		return parent::createResource($parameters);
+	}
 }
 
